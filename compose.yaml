@@ -4,9 +4,6 @@ services:
     ports:
       - 3000:3000
     stdin_open: true
-    volumes:
-      - ./frontend:/usr/src/app
-      - /usr/src/app/node_modules
     container_name: frontend
     restart: always
     networks:
@@ -18,8 +15,6 @@ services:
           target: /usr/local/app/src
         - path: ./frontend/package.json
           action: rebuild
-
-
     depends_on:
       - backend
 
@@ -27,9 +22,6 @@ services:
     container_name: backend
     restart: always
     build: backend
-    volumes:
-      - ./backend:/usr/src/app
-      - /usr/src/app/node_modules
     develop:
       watch: 
         - path: ./backend/src
