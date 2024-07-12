@@ -4,18 +4,30 @@ This is a starting point for todo-list app powered with React, Node and Mongo.
 
 ## Tech Stack
 
-- Frontend: Ract
-- Backend: NodeJS
-- Database: Mongo
-- Database Admin Interface: Mongo Express
+- Frontend: React
+- Backend: Node.js
+- Database: Mongo DB
+- Database Admin Interface: MongoExpress
 
 
-## Deploy with docker compose
-
-Clone the repo, switch to basic branch and run the following command:
+## Clone the repository
 
 ```
-$ docker compose up -d
+git clone https://github.com/dockersamples/getting-started-todo-app
+cd getting-started-todo-app
+```
+
+## Switch to `basic` branch
+
+
+```
+git checkout basic
+```
+
+## Bringing up the service containers
+
+```
+docker compose up -d
 ```
 
 After the application starts, navigate to `http://localhost:3000` in your web browser.
