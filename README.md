@@ -27,6 +27,12 @@ git clone https://github.com/dockersamples/getting-started-todo-app
 cd getting-started-todo-app
 ```
 
+Switch to container-first-aws branch:
+
+```
+git checkout container-first-aws
+```
+
 2. **Modify the Environment Variables:**
 
 ```
