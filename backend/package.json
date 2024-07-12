@@ -1,33 +1,30 @@
 {
-  "name": "backend",
+  "name": "docker_node_mongo_starter",
   "version": "1.0.0",
+  "description": "docker starter with node js and mongodb services",
   "main": "index.js",
   "scripts": {
-    "format": "prettier -l --write \"**/*.js\"",
-    "format-check": "prettier --check \"**/*.js\"",
-    "test": "jest",
-    "dev": "nodemon src/index.js"
+    "start": "node server.js",
+    "format": "prettier --write {**/,}*.js",
+    "lint": "prettier --check {**/,}*.js",
+    "dev": "nodemon server.js"
   },
+  "author": "Syed Afzal",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
-    "mysql2": "^3.9.1",
-    "sqlite3": "^5.1.7",
-    "uuid": "^9.0.1",
-    "wait-port": "^1.1.0"
-  },
-  "resolutions": {
-    "@babel/core": "7.23.9"
-  },
-  "prettier": {
-    "trailingComma": "all",
-    "tabWidth": 4,
-    "useTabs": false,
-    "semi": true,
-    "singleQuote": true
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.4",
+    "express": "^4.17.1",
+    "lodash": "^4.17.13",
+    "mongodb": "^3.0.7",
+    "mongoose": "^6.0.9",
+    "simple-node-logger": "^18.12.23",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "nodemon": "^3.0.3",
-    "prettier": "^3.2.4"
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.5"
   }
 }
