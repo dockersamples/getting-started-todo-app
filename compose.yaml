@@ -11,6 +11,15 @@ services:
     restart: always
     networks:
       - react-express
+    develop:
+      watch: 
+        - path: ./frontend/src
+          action: sync
+          target: /usr/local/app/src
+        - path: ./frontend/package.json
+          action: rebuild
+
+
     depends_on:
       - backend
 
@@ -21,6 +30,13 @@ services:
     volumes:
       - ./backend:/usr/src/app
       - /usr/src/app/node_modules
+    develop:
+      watch: 
+        - path: ./backend/src
+          action: sync
+          target: /usr/local/app/src
+        - path: ./backend/package.json
+          action: rebuild
     depends_on:
       - mongo
     networks:
