@@ -4,7 +4,8 @@ This is a starting point for todo-list app powered with React, Node and Mongo.
 
 ## Tech Stack
 
-![image](https://github.com/user-attachments/assets/5b75919c-f250-4c5a-b146-5754de888355)
+![image](https://github.com/user-attachments/assets/107e89d6-6cbf-4f4f-b969-9e17b9f8b10d)
+
 
 
 - Frontend: React
