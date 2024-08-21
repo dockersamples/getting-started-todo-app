@@ -1,6 +1,6 @@
 ## A Basic Todo List App
 
-This is a starting point for todo-list app powered with React, Node and Mongo.
+This is a starting point for todo-list app powered with React, Node and Mongo. It allows you to run a simple todo list app locally on your Docker Desktop.
 
 ## Tech Stack
 
